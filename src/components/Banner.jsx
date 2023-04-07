@@ -18,20 +18,19 @@ import { fadeIn } from "../variants";
 const Banner = () => {
   return (
     
-    <section className='min-h-[100vh] flex items-center' id='home'>
+    <section className='min-h-[100vh] flex items-center' id='home'> 
       <div className='container mx-auto'>
 
         <div className='flex flex-col items-center gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
 
           {/* Name */}
-          <div className='flex-1 text-center font-secondary lg:text-left'>
+          <div className='flex-1 text-center font-secondary lg:text-left mt-5'>
             <motion.h1
             variants={fadeIn("up", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{once: false, amount: 0.7}}
-            className='text-[60px] font-semibold leading-[1] lg:text-[90px] mb-7 lg:mb-3'
-            >  
+            className='text-[60px] font-semibold leading-[1] lg:text-[90px] mb-7 lg:mb-3'>  
               <span className='text-accent'>Esteban</span> <br /><span>Pelutiero</span>
             </motion.h1>
 
@@ -74,7 +73,7 @@ const Banner = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{once: false, amount: 0.7}}
-            className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
+            className='flex max-w-max gap-x-6 items-center mb-10 mx-auto lg:mx-0'>
               <button className='btn btn-lg'>Contact me</button>
 
               {/* links to github and linkedin */}
@@ -94,7 +93,7 @@ const Banner = () => {
           variants={fadeIn("down", 0.6)}
           initial="hidden"
           whileInView={"show"}
-          className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[420px] mx-auto'>
+          className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[420px] mx-auto mt-5'>
             <img src={Image} alt="Profile image" />
           </motion.div>
 
