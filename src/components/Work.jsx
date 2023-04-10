@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import Img1 from '../assets/portfolio-img1.png';
@@ -38,8 +39,11 @@ const Work = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rerum voluptate aliquid deserunt illo aspernatur labore perspiciatis repellat doloremque sed!
                 </p>
 
-                <button className='btn btn-sm'>
-                  View All Projects
+                <button className='btn btn-sm flex flex-row gap-x-4 items-center'>
+                  <span>
+                    View all Projects
+                  </span>
+                  <FaGithub className='h-[32px] w-[32px] '/>
                 </button>
 
               </div>
@@ -73,16 +77,16 @@ const Work = () => {
 
             {/* left 2 boxes of works */}
 
-            <div className='flex-1 flex flex-col justify-center gap-y-8'>
+            <motion.div
+            variants={fadeIn("left", 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{once: false, amount: 0.7}}
+            className='flex-1 flex flex-col justify-center gap-y-8'>
 
               {/* second work */}
 
-              <motion.div
-              variants={fadeIn("left", 0.5)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{once: false, amount: 0.7}}
-              className='lg:w-[500px] lg:h-auto group relative overflow-hidden border-[3px] border-white/50 rounded-xl'>
+              <div className='lg:w-[500px] lg:h-auto group relative overflow-hidden border-[3px] border-white/50 rounded-xl'>
 
                 {/* overlay */}
                 <div className='group-hover:bg-black/60 w-full h-full absolute z-40 transition-all duration-300'></div>
@@ -104,16 +108,11 @@ const Work = () => {
                   </span>
                 </div>
 
-              </motion.div>
+              </div>
 
               {/* third work */}
 
-              <motion.div
-              variants={fadeIn("left", 0.5)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{once: false, amount: 0.7}}
-              className='lg:w-[500px] lg:h-auto group relative overflow-hidden border-[3px] border-white/50 rounded-xl'>
+              <div className='lg:w-[500px] lg:h-auto group relative overflow-hidden border-[3px] border-white/50 rounded-xl'>
 
                 {/* overlay */}
                 <div className='group-hover:bg-black/60 w-full h-full absolute z-40 transition-all duration-300'></div>
@@ -135,9 +134,9 @@ const Work = () => {
                   </span>
                 </div>
 
-              </motion.div>
+              </div>
 
-            </div>
+            </motion.div>
           </div>
 
         </div>

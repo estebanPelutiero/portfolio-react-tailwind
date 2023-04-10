@@ -16,7 +16,7 @@ const About = () => {
     <section className='section' id='about' ref={ref}>
       <div className="container mx-auto">
         
-        <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
+        <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-18 lg:gap-y-0 h-screen'>
 
           {/* img */}
           
@@ -41,7 +41,7 @@ const About = () => {
               I'm a Freelance Front-end Developer with passion for simple and attractive designs
             </h3>
             <p className='mb-6'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro omnis, exercitationem voluptatem cumque eaque qui vel quisquam voluptatum! Sequi, enim.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro omnis, exercitationem voluptatem cumque eaque qui vel quisquam voluptatum!
             </p>
 
             {/* stats */}

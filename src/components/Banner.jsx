@@ -93,7 +93,7 @@ const Banner = () => {
           variants={fadeIn("down", 0.6)}
           initial="hidden"
           whileInView={"show"}
-          className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[420px] mx-auto mt-5'>
+          className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[420px] mr-8 mt-5'>
             <img src={Image} alt="Profile image" />
           </motion.div>
 
