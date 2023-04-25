@@ -49,7 +49,7 @@ const Work = () => {
               </div>
 
               {/* Work div box*/}
-              <div className='lg:w-[500px] lg:h-auto group relative overflow-hidden border-[3px] border-white/50 rounded-xl'>
+              <div className='lg:w-[500px] lg:h-auto group relative overflow-hidden border-[3px] border-white/50 rounded-xl cursor-pointer'>
 
                 {/* overlay */}
                 <div className='group-hover:bg-black/60 w-full h-full absolute z-40 transition-all duration-300'></div>
@@ -75,7 +75,7 @@ const Work = () => {
 
             </motion.div>
 
-            {/* left 2 boxes of works */}
+            {/* right 2 boxes of works */}
 
             <motion.div
             variants={fadeIn("left", 0.5)}
@@ -86,13 +86,13 @@ const Work = () => {
 
               {/* second work */}
 
-              <div className='lg:w-[500px] lg:h-auto group relative overflow-hidden border-[3px] border-white/50 rounded-xl'>
+              <div className='lg:w-[500px] lg:h-auto group relative overflow-hidden border-[3px] border-white/50 rounded-xl cursor-pointer'>
 
                 {/* overlay */}
                 <div className='group-hover:bg-black/60 w-full h-full absolute z-40 transition-all duration-300'></div>
 
                 {/* img */}
-                <img className='group-hover:scale-125 transition-all duration-700' src={Img2} alt="" />
+                <img className='group-hover:scale-125 transition-all duration-700' src={Img1} alt="" />
 
                 {/* pretitle */}
                 <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
@@ -112,13 +112,13 @@ const Work = () => {
 
               {/* third work */}
 
-              <div className='lg:w-[500px] lg:h-auto group relative overflow-hidden border-[3px] border-white/50 rounded-xl'>
+              <div className='lg:w-[500px] lg:h-auto group relative overflow-hidden border-[3px] border-white/50 rounded-xl cursor-pointer'>
 
                 {/* overlay */}
                 <div className='group-hover:bg-black/60 w-full h-full absolute z-40 transition-all duration-300'></div>
 
                 {/* img */}
-                <img className='group-hover:scale-125 transition-all duration-700' src={Img3} alt="" />
+                <img className='group-hover:scale-125 transition-all duration-700' src={Img1} alt="" />
 
                 {/* pretitle */}
                 <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
