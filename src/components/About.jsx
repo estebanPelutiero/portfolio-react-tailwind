@@ -16,7 +16,7 @@ const About = () => {
     <section className='section' id='about' ref={ref}>
       <div className="container mx-auto">
         
-        <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-18 lg:gap-y-0 h-screen'>
+        <div className='flex flex-col justify-center items-baseline gap-y-10 lg:flex-row lg:items-center lg:gap-x-18 lg:gap-y-0 h-screen'>
 
           {/* img */}
           
@@ -25,7 +25,7 @@ const About = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{once: false, amount: 0.3}}
-          className='flex-1 bg-about bg-contain bg-no-repeat h-[600px] mix-blend-lighten bg-top'></motion.div>
+          className='flex-1 bg-about bg-no-repeat h-[600px] w-[80%] '></motion.div>
 
           {/* text */}
 

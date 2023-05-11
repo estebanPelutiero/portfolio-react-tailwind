@@ -1,7 +1,7 @@
 import React from 'react';
 
 // images
-import Image from "../assets/avatar.svg";
+import Image from "../assets/sese2.png";
 
 // icons 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -21,7 +21,7 @@ const Banner = () => {
     <section className='min-h-[100vh] flex items-center' id='home'> 
       <div className='container mx-auto'>
 
-        <div className='flex flex-col items-center gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
+        <div className='relative flex flex-col items-center gap-y-8 lg:flex-row lg:items-center'>
 
           {/* Name */}
           <div className='flex-1 text-center font-secondary lg:text-left mt-5'>
@@ -89,12 +89,16 @@ const Banner = () => {
           </div>
 
           {/* picture of my face */}
+
           <motion.div
           variants={fadeIn("down", 0.6)}
           initial="hidden"
           whileInView={"show"}
-          className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[420px] mr-8 mt-5'>
-            <img src={Image} alt="Profile image" />
+          className='hidden lg:flex w-[500px] justify-center items-center mr-8'>
+
+           
+            <img src={Image} className='absolute w-[500px] mb-20' alt="Profile image" />
+            
           </motion.div>
 
         </div>
