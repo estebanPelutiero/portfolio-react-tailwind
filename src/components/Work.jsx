@@ -31,17 +31,18 @@ const Work = () => {
               <div className='mb-5'>
 
                 <h2 className='h2 leading-tight text-accent'>
-                  My Latest <br />
-                  Works
+                  Mis ultimos <br />
+                  Trabajos
                 </h2>
 
                 <p className='max-w-sm mb-5'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rerum voluptate aliquid deserunt illo aspernatur labore perspiciatis repellat doloremque sed!
+                  Te dejo una colección de los proyectos que fui armando con el pasar del ultimo año. <br />
+                  Los hay desde HTML y CSS puro, hasta React combinado con Tailwind.
                 </p>
 
                 <button className='btn btn-sm flex flex-row gap-x-4 items-center'>
                   <span>
-                    View all Projects
+                    <a title='Github' target='_blank' rel='noopener noreferrer' href="https://github.com/estebanPelutiero">Ver todos</a>
                   </span>
                   <FaGithub className='h-[32px] w-[32px] '/>
                 </button>

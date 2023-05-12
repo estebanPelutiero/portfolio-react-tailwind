@@ -1,19 +1,16 @@
 import React from 'react';
 
-import CountUp from 'react-countup';
-import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
+import { DiReact, DiJsBadge, DiGit, DiCss3, DiHtml5 } from 'react-icons/di';
+import { SiTailwindcss } from 'react-icons/si';
+import { Link } from 'react-scroll';
 
 const About = () => {
 
-  const [ref, inView] = useInView({
-    threshold: 0.5,
-  });
-
   return (
 
-    <section className='section' id='about' ref={ref}>
+    <section className='section' id='about'>
       <div className="container mx-auto">
         
         <div className='flex flex-col justify-center items-baseline gap-y-10 lg:flex-row lg:items-center lg:gap-x-18 lg:gap-y-0 h-screen'>
@@ -36,53 +33,35 @@ const About = () => {
           viewport={{once: false, amount: 0.3}}
           className='flex-1'>
 
-            <h2 className='h2 text-accent'>About me</h2>
+            <h2 className='h2 text-accent'>Sobre mi</h2>
             <h3 className='h3 mb-4'>
-              I'm a Freelance Front-end Developer with passion for simple and attractive designs
+              Desarrolador front end autodidacta
             </h3>
             <p className='mb-6'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro omnis, exercitationem voluptatem cumque eaque qui vel quisquam voluptatum!
+              Me inicié con cursos de <strong>HTML, CSS, Github, Javascript y React.</strong><br />
+              Luego seguí por mi cuenta aprovechando todo lo que ofrece internet. <br />
+              A su vez, voy creando y buscando proyectos nuevos para practicar <br /> y afianzar contantemente lo que voy aprendiendo.  
             </p>
 
-            {/* stats */}
-            <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
+            {/* technologies */}
 
-              <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {
-                  inView ? <CountUp start={0} end={15} duration={5}/> : null
-                  }
-                </div>
-                <div className='font-primary text-sm tracking-[2px] '>Years of <br />
-                Experience</div>
+            <div><h2 className='h3 text-[22px] font-normal '>Tecnologías que uso actualemente</h2></div>
+
+            <div className='flex gap-x-6 lg:gap-x-7 mb-12'>
+              <div className='flex flex-row justify-between w-[90%]'>
+                <DiReact size={45} />
+                <DiJsBadge size={45} />
+                <DiGit size={45} />
+                <DiHtml5 size={45} />
+                <DiCss3 size={45} />
+                <SiTailwindcss size={45} />
               </div>
-
-              <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {
-                  inView ? <CountUp start={0} end={13} duration={5}/> : null
-                  }
-                  k+
-                </div>
-                <div className='font-primary text-sm tracking-[2px] '>Projects <br />
-                Completed</div>
-              </div>
-
-              <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {
-                  inView ? <CountUp start={0} end={30} duration={5}/> : null
-                  }
-                  k+
-                </div>
-                <div className='font-primary text-sm tracking-[2px] '>Satisfied<br />
-                Clients</div>
-              </div>
-
             </div>
 
             <div className='order-last'>
-                <button className='btn btn-lg'>Contact me</button>
+                <Link to='contact' smooth={true} spy={true} >
+                  <button className='btn btn-lg'>Contacto</button>
+                </Link>
             </div>     
 
           </motion.div>
