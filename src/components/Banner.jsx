@@ -46,7 +46,7 @@ const Banner = () => {
             className='mb-6 text-[36px] lg:text-[55px] font-secondary font-semibold uppercase leading-[1]'>
               <span className='mr-2'>Soy</span>
               <TypeAnimation sequence={[
-                "Desarrolador",
+                "Desarrollador",
                 2000,
                 "Diseñador",
                 2000,
@@ -66,8 +66,8 @@ const Banner = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{once: false, amount: 0.7}}
-            className='mb-10 max-w-lg mx-auto lg:mx-0 w-8/12 text-xl'>
-              Desarrollador Frontend autodidacta <br /> de Buenos Aires, Argentina
+            className='mb-10 max-w-lg mx-auto lg:mx-0 w-full text-xl'>
+              Desarrollador Frontend autodidacta <br /> ubicado en Buenos Aires, Argentina
             </motion.p>
 
             {/* button to contact */}
