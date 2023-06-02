@@ -46,7 +46,7 @@ const Banner = () => {
             className='mb-6 text-[36px] lg:text-[55px] font-secondary font-semibold uppercase leading-[1]'>
               <span className='mr-2'>Soy</span>
               <TypeAnimation sequence={[
-                "Desarrolador",
+                "Desarrollador",
                 2000,
                 "Diseñador",
                 2000,
@@ -66,8 +66,8 @@ const Banner = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{once: false, amount: 0.7}}
-            className='mb-10 max-w-lg mx-auto lg:mx-0 w-8/12 text-xl'>
-              Desarrollador Frontend autodidacta <br /> de Buenos Aires, Argentina
+            className='mb-10 max-w-lg mx-auto lg:mx-0 w-full text-xl'>
+              Desarrollador Frontend autodidacta <br /> formado en Buenos Aires, Argentina
             </motion.p>
 
             {/* button to contact */}
@@ -84,10 +84,10 @@ const Banner = () => {
               {/* links to github and linkedin */}
               <div className='flex text-[20px] gap-x-6 max-w-max mx-auto'>
                 <a href="https://github.com/estebanPelutiero" target='_blank' rel="noopener noreferrer" title='Github'>
-                  <FaGithub className='w-[35px] h-[35px]'/>
+                  <FaGithub className='hover:fill-[#B809C3] w-[35px] h-[35px]'/>
                 </a>
                 <a href="https://linkedin.com/in/estebanpelutiero" target='_blank' rel="noopener noreferrer" title='Linkedin'>
-                  <FaLinkedin className='w-[35px] h-[35px]'/>
+                  <FaLinkedin className='hover:fill-[#B809C3] w-[35px] h-[35px]'/>
                 </a>
               </div>
             </motion.div>

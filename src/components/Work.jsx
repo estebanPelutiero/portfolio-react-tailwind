@@ -4,8 +4,6 @@ import { FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import Img1 from '../assets/portfolio-img1.png';
-import Img2 from '../assets/portfolio-img2.png';
-import Img3 from '../assets/portfolio-img3.png';
 
 
 const Work = () => {
@@ -40,17 +38,14 @@ const Work = () => {
                   Los hay desde HTML y CSS puro, hasta React combinado con Tailwind.
                 </p>
 
-                <button className='btn btn-sm flex flex-row gap-x-4 items-center'>
-                  <span>
-                    <a title='Github' target='_blank' rel='noopener noreferrer' href="https://github.com/estebanPelutiero">Ver todos</a>
-                  </span>
-                  <FaGithub className='h-[32px] w-[32px] '/>
+                <button className='btn btn-sm'>
+                    <a className='flex flex-row gap-x-4 items-center' title='Github' target='_blank' rel='noopener noreferrer' href="https://github.com/estebanPelutiero">Ver todos <FaGithub className='h-[32px] w-[32px]'/></a>
                 </button>
 
               </div>
 
               {/* Work div box*/}
-              <div className='lg:w-[500px] lg:h-auto group relative overflow-hidden border-[3px] border-white/50 rounded-xl cursor-pointer'>
+              <div className='lg:w-[500px] lg:h-auto group relative overflow-hidden border border-white/60 rounded-lg cursor-pointer'>
 
                 {/* overlay */}
                 <div className='group-hover:bg-black/60 w-full h-full absolute z-40 transition-all duration-300'></div>
@@ -87,7 +82,7 @@ const Work = () => {
 
               {/* second work */}
 
-              <div className='lg:w-[500px] lg:h-auto group relative overflow-hidden border-[3px] border-white/50 rounded-xl cursor-pointer'>
+              <div className='lg:w-[500px] lg:h-auto group relative overflow-hidden border border-white/60 rounded-lg cursor-pointer'>
 
                 {/* overlay */}
                 <div className='group-hover:bg-black/60 w-full h-full absolute z-40 transition-all duration-300'></div>
@@ -113,7 +108,7 @@ const Work = () => {
 
               {/* third work */}
 
-              <div className='lg:w-[500px] lg:h-auto group relative overflow-hidden border-[3px] border-white/50 rounded-xl cursor-pointer'>
+              <div className='lg:w-[500px] lg:h-auto group relative overflow-hidden border border-white/60 rounded-lg cursor-pointer'>
 
                 {/* overlay */}
                 <div className='group-hover:bg-black/60 w-full h-full absolute z-40 transition-all duration-300'></div>
