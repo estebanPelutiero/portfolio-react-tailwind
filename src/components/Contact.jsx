@@ -23,11 +23,11 @@ const Contact = () => {
                 <h3 className='text-[25px] lg:text-[33px] text-center border-b pb-5 mb-3 '>Detalles de contacto</h3>
                 <div className='flex items-center'>
                   <FiMail size={25}/>
-                  <p className='py-1 px-3 text-[20px] hover:text-accent '><a href="#">estebanpelutiero@gmail.com</a></p>
+                  <p className='py-1 px-3 text-[20px] hover:text-accent '><a title='Gmail' target='_blank' rel='noopener noreferrer' href="mailto:estebanpelutiero@gmail.com?Subject=Interesado%20en%20trabajar%20contigo">estebanpelutiero@gmail.com</a></p>
                 </div>
                 <div className='flex items-center'>
                   <AiOutlineWhatsApp size={25} />
-                  <p className='py-1 px-3 text-[20px] hover:text-accent '><a href="#">03489 - 311605</a></p>
+                  <p className='py-1 px-3 text-[20px] hover:text-accent '><a title='Ir al chat' target='_blank' rel='noopener noreferrer' href="https://wa.me/543489311605">03489 - 311605</a></p>
                 </div>
               </div>
             </div>
@@ -39,25 +39,37 @@ const Contact = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{once: false, amount: 0.7}}
-          className='border rounded-2xl flex flex-col gap-y-6 p-6 items-start lg:w-[40%] lg:mr-28 lg:mb-auto mb-10'>
+          className='border rounded-2xl flex flex-col gap-y-6 p-6 items-start lg:w-[40%] lg:mr-28 lg:mb-auto mb-10'
+          action="https://formsubmit.co/estebanpelutiero@gmail.com" 
+          method="POST"
+          >
 
             <input
             className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all'
             type="text"
-            placeholder='Nombre completo'/>
+            placeholder='Nombre completo'
+            required='true'
+            name='name'/>
 
             <input
             className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all'
             type="text"
-            placeholder='Email'/>
+            placeholder='Email'
+            required='true'
+            name='email'/>
 
             <textarea
             className='bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all mb-12 resize-none'
             placeholder='Mensaje'
+            required='true'
+            name='comments'
             >
             </textarea>
 
-            <button className='btn btn-lg'>Enviar</button>
+            <button type='submit' className='btn btn-lg'>Enviar</button>
+
+            <input type="hidden" name="_next" value="http://localhost:3000" />
+            <input type="hidden" name='_captcha' value='false'/>
 
           </motion.form>
         </div>

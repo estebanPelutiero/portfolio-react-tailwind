@@ -40,7 +40,7 @@ const About = () => {
             </h3>
             <p className='mb-6 lg:text-start text-center w-[90%] '>
               Me inicié con cursos de <strong>HTML, CSS, Github, Javascript y React.</strong><br />
-              Luego seguí por mi cuenta aprovechando todo lo que ofrece internet. <br />
+              Luego, seguí por mi cuenta aprovechando todo lo que ofrece internet. <br />
               A su vez, voy creando y buscando proyectos nuevos para practicar y afianzar constantemente lo que voy aprendiendo.  
             </p>
 
